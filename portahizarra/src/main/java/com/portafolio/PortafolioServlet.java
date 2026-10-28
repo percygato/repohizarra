@@ -17,12 +17,10 @@ import java.util.List;
 @WebServlet("/PortafolioServlet")
 @MultipartConfig(
     fileSizeThreshold = 1024 * 1024 * 2,  // 2MB
-    maxFileSize = 1024 * 1024 * 20,       // 20MB (mayor tamaño para PDFs)
-    maxRequestSize = 1024 * 1024 * 50    // 50MB
+    maxFileSize = 1024 * 1024 * 20,       // 20MB
+    maxRequestSize = 1024 * 1024 * 50     // 50MB
 )
 public class PortafolioServlet extends HttpServlet {
-
-    private static final String BASE_UPLOAD_DIR = "/workspaces/repohizarra/portahizarra/uploads";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -43,7 +41,11 @@ public class PortafolioServlet extends HttpServlet {
             semanaNum = 1;
         }
 
-        File weekFolder = new File(BASE_UPLOAD_DIR + File.separator + "semana_" + semanaNum);
+        // Obtener la ruta real dentro del servidor Tomcat (/uploads)
+        String uploadDirPath = getServletContext().getRealPath("/uploads");
+        File baseUploadDir = new File(uploadDirPath);
+        File weekFolder = new File(baseUploadDir, "semana_" + semanaNum);
+        
         if (!weekFolder.exists()) {
             weekFolder.mkdirs();
         }
@@ -283,7 +285,6 @@ public class PortafolioServlet extends HttpServlet {
             out.println("            <div class='empty-msg'>No hay trabajos o archivos subidos en la Semana " + semanaNum + ". ¡Sube el primero arriba!</div>");
         } else {
             for (String fileName : uploadedFiles) {
-                // Apunta correctamente al FileServlet (/uploads/...)
                 String filePath = "uploads/semana_" + semanaNum + "/" + fileName;
                 out.println("            <div class='img-card'>");
                 if (isPdfFile(fileName)) {
@@ -327,7 +328,10 @@ public class PortafolioServlet extends HttpServlet {
         if (filePart != null && filePart.getSize() > 0) {
             String fileName = getSubmittedFileName(filePart);
             if (fileName != null && !fileName.trim().isEmpty()) {
-                File weekFolder = new File(BASE_UPLOAD_DIR + File.separator + "semana_" + semanaNum);
+                String uploadDirPath = getServletContext().getRealPath("/uploads");
+                File baseUploadDir = new File(uploadDirPath);
+                File weekFolder = new File(baseUploadDir, "semana_" + semanaNum);
+                
                 if (!weekFolder.exists()) {
                     weekFolder.mkdirs();
                 }
