@@ -9,12 +9,14 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.Part;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet("/PortafolioServlet")
+@WebServlet(urlPatterns = {"/PortafolioServlet", "/ver-archivo"})
 @MultipartConfig(
     fileSizeThreshold = 1024 * 1024 * 2,  // 2MB
     maxFileSize = 1024 * 1024 * 20,       // 20MB
@@ -26,6 +28,41 @@ public class PortafolioServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        String servletPath = request.getServletPath();
+
+        // Si la petición es para ver/descargar un archivo directamente
+        if ("/ver-archivo".equals(servletPath)) {
+            String semana = request.getParameter("semana");
+            String archivo = request.getParameter("archivo");
+            
+            if (semana != null && archivo != null) {
+                String uploadDirPath = getServletContext().getRealPath("/uploads");
+                File file = new File(uploadDirPath + File.separator + "semana_" + semana, archivo);
+                
+                if (file.exists() && file.isFile()) {
+                    String mimeType = getServletContext().getMimeType(file.getName());
+                    if (mimeType == null) {
+                        mimeType = "application/octet-stream";
+                    }
+                    response.setContentType(mimeType);
+                    response.setContentLength((int) file.length());
+                    
+                    try (FileInputStream in = new FileInputStream(file);
+                         OutputStream out = response.getOutputStream()) {
+                        byte[] buffer = new byte[4096];
+                        int bytesRead;
+                        while ((bytesRead = in.read(buffer)) != -1) {
+                            out.write(buffer, 0, bytesRead);
+                        }
+                    }
+                    return;
+                }
+            }
+            response.sendError(HttpServletResponse.SC_NOT_FOUND);
+            return;
+        }
+
+        // Renderizado normal del Portafolio
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
@@ -41,7 +78,6 @@ public class PortafolioServlet extends HttpServlet {
             semanaNum = 1;
         }
 
-        // Obtener la ruta real dentro del servidor Tomcat (/uploads)
         String uploadDirPath = getServletContext().getRealPath("/uploads");
         File baseUploadDir = new File(uploadDirPath);
         File weekFolder = new File(baseUploadDir, "semana_" + semanaNum);
@@ -279,14 +315,15 @@ public class PortafolioServlet extends HttpServlet {
         out.println("            </form>");
         out.println("        </div>");
 
-        // Galería de Archivos
+        // Galería de Archivos apuntando al Servlet rutero (/ver-archivo)
         out.println("        <div class='gallery-grid'>");
         if (uploadedFiles.isEmpty()) {
             out.println("            <div class='empty-msg'>No hay trabajos o archivos subidos en la Semana " + semanaNum + ". ¡Sube el primero arriba!</div>");
         } else {
             for (String fileName : uploadedFiles) {
                 String encodedFileName = java.net.URLEncoder.encode(fileName, "UTF-8").replace("+", "%20");
-                String filePath = request.getContextPath() + "/uploads/semana_" + semanaNum + "/" + encodedFileName;
+                String filePath = request.getContextPath() + "/ver-archivo?semana=" + semanaNum + "&archivo=" + encodedFileName;
+                
                 out.println("            <div class='img-card'>");
                 if (isPdfFile(fileName)) {
                     out.println("                <a href='" + filePath + "' target='_blank' class='pdf-card-content'>");
@@ -298,7 +335,7 @@ public class PortafolioServlet extends HttpServlet {
                     out.println("                    <img src='" + filePath + "' alt='Trabajo' />");
                     out.println("                </a>");
                 }
-                out.println("                <a href='PortafolioServlet?semana=" + semanaNum + "&action=delete&archivo=" + fileName + "' class='delete-btn' onclick='return confirm(\"¿Estás seguro de eliminar este archivo?\");'>🗑️ Eliminar</a>");
+                out.println("                <a href='PortafolioServlet?semana=" + semanaNum + "&action=delete&archivo=" + encodedFileName + "' class='delete-btn' onclick='return confirm(\"¿Estás seguro de eliminar este archivo?\");'>🗑️ Eliminar</a>");
                 out.println("            </div>");
             }
         }
