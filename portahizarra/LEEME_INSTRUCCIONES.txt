@@ -1,0 +1,42 @@
+========================================================================
+PORTAFOLIO EN JAVA PURA (SERVLETS Y JAVA WEB) - ESTILO ANIME / NEÓN
+Estudiante: Hizarra Samaniego Percy Andy
+========================================================================
+
+DESCRIPCIÓN DEL PROYECTO:
+- Sistema desarrollado 100% en Java Web (Jakarta Servlet / Java 17).
+- NO UTILIZA archivos HTML estáticos ni JSP. Todo el pintado de la interfaz
+  y respuesta HTTP se genera en dinámico desde Java mediante PrintWriter.
+- NO UTILIZA Base de Datos. Los archivos de cada semana se almacenan directamente
+  en el sistema de archivos del servidor Tomcat (carpeta /uploads/semana_X/).
+- Libre acceso sin inicio de sesión (abrir la página y seleccionar directamente las semanas 1 a 10).
+
+ESTRUCTURA DE ARCHIVOS:
+PortafolioAnimeJava/
+├── pom.xml
+└── src/
+    └── main/
+        ├── java/
+        │   └── com/
+        │       └── portafolio/
+        │           └── PortafolioServlet.java
+        └── webapp/
+            └── WEB-INF/
+                └── web.xml
+
+CÓMO IMPORTAR Y EJECUTAR EN NETBEANS / ECLIPSE / INTELLIJ:
+
+1. EXTRAER EL PROYECTO:
+   - Descomprime el archivo 'PortafolioAnimeJava.zip'.
+
+2. IMPORTAR EN IDE (NetBeans / Eclipse / IntelliJ):
+   - NetBeans: File -> Open Project -> Seleccionar la carpeta 'PortafolioAnimeJava'.
+   - IntelliJ: File -> Open -> Seleccionar el archivo 'pom.xml' -> Open as Project.
+   - Eclipse: File -> Import -> Maven -> Existing Maven Projects -> Seleccionar carpeta.
+
+3. CONFIGURAR SERVIDOR:
+   - Requiere Apache Tomcat 10+ o Payara 6+ (Compatible con JakartaEE / Servlet 6.0).
+
+4. EJECUTAR PROYECTO:
+   - Haz clic derecho sobre el proyecto en tu IDE -> Run / Desplegar en Apache Tomcat.
+   - Accede desde el navegador a: http://localhost:8080/PortafolioAnimeJava/PortafolioServlet

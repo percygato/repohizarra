@@ -1,0 +1,149 @@
+28-Oct-2026 04:16:19.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+28-Oct-2026 04:16:19.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+28-Oct-2026 04:16:19.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+28-Oct-2026 04:16:19.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+28-Oct-2026 04:16:19.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-1064-azure
+28-Oct-2026 04:16:19.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Oct-2026 04:16:19.044 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/sdkman/candidates/java/25.0.4+1-ms
+28-Oct-2026 04:16:19.044 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.4.1+1-LTS
+28-Oct-2026 04:16:19.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+28-Oct-2026 04:16:19.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 04:16:19.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 04:16:19.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/conf/logging.properties
+28-Oct-2026 04:16:19.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Oct-2026 04:16:19.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Oct-2026 04:16:19.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Oct-2026 04:16:19.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+28-Oct-2026 04:16:19.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+28-Oct-2026 04:16:19.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+28-Oct-2026 04:16:19.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+28-Oct-2026 04:16:19.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+28-Oct-2026 04:16:19.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+28-Oct-2026 04:16:19.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 04:16:19.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 04:16:19.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/temp
+28-Oct-2026 04:16:19.088 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+28-Oct-2026 04:16:19.749 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Oct-2026 04:16:19.784 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1589] milliseconds
+28-Oct-2026 04:16:19.839 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Oct-2026 04:16:19.840 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+28-Oct-2026 04:16:19.939 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war]
+28-Oct-2026 04:16:20.383 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war] has finished in [440] ms
+28-Oct-2026 04:16:20.384 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/host-manager]
+28-Oct-2026 04:16:20.451 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/host-manager] has finished in [67] ms
+28-Oct-2026 04:16:20.453 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/examples]
+28-Oct-2026 04:16:20.815 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/examples] has finished in [361] ms
+28-Oct-2026 04:16:20.815 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/manager]
+28-Oct-2026 04:16:20.839 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/manager] has finished in [24] ms
+28-Oct-2026 04:16:20.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/ROOT]
+28-Oct-2026 04:16:20.864 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/ROOT] has finished in [24] ms
+28-Oct-2026 04:16:20.867 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/docs]
+28-Oct-2026 04:16:20.899 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/docs] has finished in [32] ms
+28-Oct-2026 04:16:20.903 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Oct-2026 04:16:20.939 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1152] milliseconds
+28-Oct-2026 04:25:50.994 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/PortafolioAnimeJava]
+28-Oct-2026 04:25:51.016 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war]
+28-Oct-2026 04:25:51.056 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war] has finished in [40] ms
+28-Oct-2026 04:32:51.111 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/PortafolioAnimeJava]
+28-Oct-2026 04:32:51.132 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war]
+28-Oct-2026 04:32:51.166 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war] has finished in [33] ms
+28-Oct-2026 04:34:51.182 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/PortafolioAnimeJava]
+28-Oct-2026 04:34:51.190 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war]
+28-Oct-2026 04:34:51.221 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war] has finished in [31] ms
+28-Oct-2026 05:24:34.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+28-Oct-2026 05:24:34.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+28-Oct-2026 05:24:34.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+28-Oct-2026 05:24:34.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+28-Oct-2026 05:24:34.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-1064-azure
+28-Oct-2026 05:24:34.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Oct-2026 05:24:34.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/sdkman/candidates/java/25.0.4+1-ms
+28-Oct-2026 05:24:34.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.4.1+1-LTS
+28-Oct-2026 05:24:34.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+28-Oct-2026 05:24:34.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 05:24:34.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 05:24:34.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/conf/logging.properties
+28-Oct-2026 05:24:34.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Oct-2026 05:24:34.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Oct-2026 05:24:34.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Oct-2026 05:24:34.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+28-Oct-2026 05:24:34.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+28-Oct-2026 05:24:34.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+28-Oct-2026 05:24:34.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+28-Oct-2026 05:24:34.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+28-Oct-2026 05:24:34.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+28-Oct-2026 05:24:34.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 05:24:34.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 05:24:34.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/temp
+28-Oct-2026 05:24:34.893 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+28-Oct-2026 05:24:35.766 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Oct-2026 05:24:35.820 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1566] milliseconds
+28-Oct-2026 05:24:36.052 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Oct-2026 05:24:36.052 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+28-Oct-2026 05:24:36.158 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war]
+28-Oct-2026 05:24:36.190 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava] was found with a last modified time that did not match the associated WAR. It will be deleted.
+28-Oct-2026 05:24:36.578 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war] has finished in [415] ms
+28-Oct-2026 05:24:36.579 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/host-manager]
+28-Oct-2026 05:24:36.619 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/host-manager] has finished in [40] ms
+28-Oct-2026 05:24:36.620 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/examples]
+28-Oct-2026 05:24:36.976 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/examples] has finished in [356] ms
+28-Oct-2026 05:24:36.979 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/manager]
+28-Oct-2026 05:24:37.007 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/manager] has finished in [28] ms
+28-Oct-2026 05:24:37.009 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/ROOT]
+28-Oct-2026 05:24:37.025 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/ROOT] has finished in [16] ms
+28-Oct-2026 05:24:37.026 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/docs]
+28-Oct-2026 05:24:37.045 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/docs] has finished in [19] ms
+28-Oct-2026 05:24:37.056 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Oct-2026 05:24:37.076 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1251] milliseconds
+28-Oct-2026 05:29:57.115 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/PortafolioAnimeJava]
+28-Oct-2026 05:29:57.134 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war]
+28-Oct-2026 05:29:57.165 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war] has finished in [31] ms
+28-Oct-2026 05:31:47.185 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/PortafolioAnimeJava]
+28-Oct-2026 05:31:47.195 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war]
+28-Oct-2026 05:31:47.226 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war] has finished in [31] ms
+28-Oct-2026 05:38:57.285 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/PortafolioAnimeJava]
+28-Oct-2026 05:38:57.292 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war]
+28-Oct-2026 05:38:57.365 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war] has finished in [70] ms
+28-Oct-2026 06:39:12.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+28-Oct-2026 06:39:12.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+28-Oct-2026 06:39:12.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+28-Oct-2026 06:39:12.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+28-Oct-2026 06:39:12.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-1064-azure
+28-Oct-2026 06:39:12.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Oct-2026 06:39:12.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/sdkman/candidates/java/25.0.4+1-ms
+28-Oct-2026 06:39:12.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.4.1+1-LTS
+28-Oct-2026 06:39:12.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+28-Oct-2026 06:39:12.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 06:39:12.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 06:39:12.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/conf/logging.properties
+28-Oct-2026 06:39:12.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Oct-2026 06:39:12.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Oct-2026 06:39:12.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Oct-2026 06:39:12.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+28-Oct-2026 06:39:12.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+28-Oct-2026 06:39:12.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+28-Oct-2026 06:39:12.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+28-Oct-2026 06:39:12.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+28-Oct-2026 06:39:12.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+28-Oct-2026 06:39:12.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 06:39:12.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18
+28-Oct-2026 06:39:12.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/temp
+28-Oct-2026 06:39:12.357 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+28-Oct-2026 06:39:13.093 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Oct-2026 06:39:13.139 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1447] milliseconds
+28-Oct-2026 06:39:13.191 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Oct-2026 06:39:13.192 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+28-Oct-2026 06:39:13.263 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war]
+28-Oct-2026 06:39:13.286 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava] was found with a last modified time that did not match the associated WAR. It will be deleted.
+28-Oct-2026 06:39:13.856 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/PortafolioAnimeJava.war] has finished in [591] ms
+28-Oct-2026 06:39:13.858 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/host-manager]
+28-Oct-2026 06:39:13.908 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/host-manager] has finished in [49] ms
+28-Oct-2026 06:39:13.908 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/examples]
+28-Oct-2026 06:39:14.178 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/examples] has finished in [270] ms
+28-Oct-2026 06:39:14.179 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/manager]
+28-Oct-2026 06:39:14.207 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/manager] has finished in [27] ms
+28-Oct-2026 06:39:14.207 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/ROOT]
+28-Oct-2026 06:39:14.223 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/ROOT] has finished in [16] ms
+28-Oct-2026 06:39:14.223 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/docs]
+28-Oct-2026 06:39:14.247 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/workspaces/repohizarra/portahizarra/apache-tomcat-10.1.18/webapps/docs] has finished in [24] ms
+28-Oct-2026 06:39:14.252 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Oct-2026 06:39:14.299 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1156] milliseconds
