@@ -285,7 +285,7 @@ public class PortafolioServlet extends HttpServlet {
             out.println("            <div class='empty-msg'>No hay trabajos o archivos subidos en la Semana " + semanaNum + ". ¡Sube el primero arriba!</div>");
         } else {
             for (String fileName : uploadedFiles) {
-                String filePath = "uploads/semana_" + semanaNum + "/" + fileName;
+                String filePath = "/uploads/semana_" + semanaNum + "/" + fileName;
                 out.println("            <div class='img-card'>");
                 if (isPdfFile(fileName)) {
                     out.println("                <a href='" + filePath + "' target='_blank' class='pdf-card-content'>");
